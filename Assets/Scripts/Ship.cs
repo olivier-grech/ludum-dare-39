@@ -35,13 +35,14 @@ public class Ship : MonoBehaviour
 
 	public void ChangeSpeed()
 	{
-		speed += Input.GetAxis("Vertical");
+		speed = Input.GetAxis("Vertical");
 		rb.AddForce(transform.up * speed * 10f);
 	}
 
 	public void ChangeAngle()
 	{
-		angle += -Input.GetAxis("Horizontal");
-		transform.Rotate(new Vector3(0,0,angle) * Time.deltaTime);
+		angle = -Input.GetAxis("Horizontal");
+		rb.AddTorque(0,0, angle * 3f);
+		//transform.Rotate(new Vector3(0,0,angle) * 10f);
 	}
 }

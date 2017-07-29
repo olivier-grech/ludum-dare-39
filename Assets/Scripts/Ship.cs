@@ -30,11 +30,6 @@ public class Ship : MonoBehaviour
 		ChangeSpeed();
 	}
 
-	private void FixedUpdate()
-	{
-
-	}
-
 	public void ChangeSpeed()
 	{
 		float input = Input.GetAxis("Vertical");
@@ -45,6 +40,6 @@ public class Ship : MonoBehaviour
 	{
 		angle = -Input.GetAxis("Horizontal");
 		rb.AddTorque(angle * turnSpeed);
-		//transform.Rotate(new Vector3(0,0, angle * turnSpeed ) );
+		//transform.Rotate(new Vector3(0, 0, angle * turnSpeed ));
 	}
 }

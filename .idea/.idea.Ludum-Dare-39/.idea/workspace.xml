@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dce54702-f943-4cc8-b684-963216fc6237" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ludum-Dare-39/riderModule.iml" afterPath="$PROJECT_DIR$/.idea/.idea.Ludum-Dare-39/riderModule.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Jauge.cs" afterPath="$PROJECT_DIR$/Assets/Jauge.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,17 +31,17 @@
       <file leaf-file-name="Jauge.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Jauge.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+            <state relative-caret-position="570">
+              <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
               <folding>
-                <marker date="1501323171332" expanded="true" signature="6:100" ph="..." />
-                <marker date="1501323171332" expanded="true" signature="136:885" ph="{...}" />
-                <marker date="1501323171332" expanded="true" signature="302:375" ph="{...}" />
-                <marker date="1501323171332" expanded="true" signature="423:452" ph="{...}" />
-                <marker date="1501323171332" expanded="true" signature="507:883" ph="{...}" />
-                <marker date="1501323171332" expanded="true" signature="558:880" ph="{...}" />
-                <marker date="1501323171332" expanded="true" signature="644:696" ph="{...}" />
-                <marker date="1501323171332" expanded="true" signature="704:825" ph="{...}" />
+                <marker date="1501323791843" expanded="true" signature="6:100" ph="..." />
+                <marker date="1501323791843" expanded="true" signature="136:1046" ph="{...}" />
+                <marker date="1501323791843" expanded="true" signature="302:375" ph="{...}" />
+                <marker date="1501323791843" expanded="true" signature="423:449" ph="{...}" />
+                <marker date="1501323791843" expanded="true" signature="504:751" ph="{...}" />
+                <marker date="1501323791843" expanded="true" signature="555:697" ph="{...}" />
+                <marker date="1501323791843" expanded="true" signature="780:895" ph="{...}" />
+                <marker date="1501323791843" expanded="true" signature="931:1044" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -197,17 +197,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Jauge.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+        <state relative-caret-position="570">
+          <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding>
-            <marker date="1501323171332" expanded="true" signature="6:100" ph="..." />
-            <marker date="1501323171332" expanded="true" signature="136:885" ph="{...}" />
-            <marker date="1501323171332" expanded="true" signature="302:375" ph="{...}" />
-            <marker date="1501323171332" expanded="true" signature="423:452" ph="{...}" />
-            <marker date="1501323171332" expanded="true" signature="507:883" ph="{...}" />
-            <marker date="1501323171332" expanded="true" signature="558:880" ph="{...}" />
-            <marker date="1501323171332" expanded="true" signature="644:696" ph="{...}" />
-            <marker date="1501323171332" expanded="true" signature="704:825" ph="{...}" />
+            <marker date="1501323791843" expanded="true" signature="6:100" ph="..." />
+            <marker date="1501323791843" expanded="true" signature="136:1046" ph="{...}" />
+            <marker date="1501323791843" expanded="true" signature="302:375" ph="{...}" />
+            <marker date="1501323791843" expanded="true" signature="423:449" ph="{...}" />
+            <marker date="1501323791843" expanded="true" signature="504:751" ph="{...}" />
+            <marker date="1501323791843" expanded="true" signature="555:697" ph="{...}" />
+            <marker date="1501323791843" expanded="true" signature="780:895" ph="{...}" />
+            <marker date="1501323791843" expanded="true" signature="931:1044" ph="{...}" />
           </folding>
         </state>
       </provider>

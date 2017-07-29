@@ -19,7 +19,7 @@ public class Jauge : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		m_FuelAmount = 1.0f;
+		m_FuelAmount = 1;
 	}
 	
 	// Update is called once per frame
@@ -27,20 +27,32 @@ public class Jauge : MonoBehaviour
 	{
 		if (Input.GetKey("down") && m_FuelAmount > 0)
 		{
-			Vector3 newScale = Vector3.one;
-
 			if (m_FuelAmount - m_FuelConsumption <= 0)
-			{
 				m_FuelAmount = 0;
-				newScale.x = 0;
-			}
 			else
-			{
 				m_FuelAmount -= m_FuelConsumption;
-				newScale.x = m_JaugeFillTransform.localScale.x - m_FuelConsumption;
-			}
-			
-			m_JaugeFillTransform.localScale = newScale;
+
+			UpdateJauge();
 		}
+		
+		if (Input.GetKeyDown("up"))
+			AddFuel(0.2f);
+	}
+
+	private void UpdateJauge()
+	{
+		Vector3 newScale = Vector3.one;
+		newScale.x = m_FuelAmount;
+		m_JaugeFillTransform.localScale = newScale;
+	}
+
+	public void AddFuel(float amount)
+	{
+		if (m_FuelAmount + amount >= 1)
+			m_FuelAmount = 1;
+		else
+			m_FuelAmount += amount;
+
+		UpdateJauge();
 	}
 }

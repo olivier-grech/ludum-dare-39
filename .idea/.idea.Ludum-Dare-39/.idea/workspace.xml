@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dce54702-f943-4cc8-b684-963216fc6237" name="Default" comment="" />
+    <list default="true" id="dce54702-f943-4cc8-b684-963216fc6237" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.Ludum-Dare-39/riderModule.iml" afterPath="$PROJECT_DIR$/.idea/.idea.Ludum-Dare-39/riderModule.iml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,12 +14,35 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GravityAttractor.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GravityAttractor.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/OrbitalMovement/Scripts/GravityAttractor.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1501322237457" expanded="false" signature="6:44" ph="..." />
+                <marker date="1501322237457" expanded="true" signature="92:516" ph="{...}" />
+                <marker date="1501322237457" expanded="true" signature="162:514" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Jauge.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Jauge.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+              <folding>
+                <marker date="1501323171332" expanded="true" signature="6:100" ph="..." />
+                <marker date="1501323171332" expanded="true" signature="136:885" ph="{...}" />
+                <marker date="1501323171332" expanded="true" signature="302:375" ph="{...}" />
+                <marker date="1501323171332" expanded="true" signature="423:452" ph="{...}" />
+                <marker date="1501323171332" expanded="true" signature="507:883" ph="{...}" />
+                <marker date="1501323171332" expanded="true" signature="558:880" ph="{...}" />
+                <marker date="1501323171332" expanded="true" signature="644:696" ph="{...}" />
+                <marker date="1501323171332" expanded="true" signature="704:825" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -29,6 +54,15 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/OrbitalMovement/Scripts/GravityAttractor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Jauge.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/OrbitalMovement/Scripts/GravityAttractor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Jauge.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -60,7 +94,7 @@
               <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Ludum-Dare-39 (1 project)" />
+              <option name="myItemId" value="Ludum-Dare-39 (2 projects)" />
               <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
             </PATH_ELEMENT>
           </PATH>
@@ -119,8 +153,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -152,7 +187,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1501322237457" expanded="false" signature="6:44" ph="..." />
+            <marker date="1501322237457" expanded="true" signature="92:516" ph="{...}" />
+            <marker date="1501322237457" expanded="true" signature="162:514" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Jauge.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <marker date="1501323171332" expanded="true" signature="6:100" ph="..." />
+            <marker date="1501323171332" expanded="true" signature="136:885" ph="{...}" />
+            <marker date="1501323171332" expanded="true" signature="302:375" ph="{...}" />
+            <marker date="1501323171332" expanded="true" signature="423:452" ph="{...}" />
+            <marker date="1501323171332" expanded="true" signature="507:883" ph="{...}" />
+            <marker date="1501323171332" expanded="true" signature="558:880" ph="{...}" />
+            <marker date="1501323171332" expanded="true" signature="644:696" ph="{...}" />
+            <marker date="1501323171332" expanded="true" signature="704:825" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

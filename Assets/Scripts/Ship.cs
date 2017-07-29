@@ -28,10 +28,15 @@ public class Ship : MonoBehaviour
 		ChangeSpeed();
 	}
 
+	private void FixedUpdate()
+	{
+
+	}
+
 	public void ChangeSpeed()
 	{
 		speed += Input.GetAxis("Vertical");
-		rb.AddForce(transform.forward * speed);
+		rb.AddForce(transform.up * speed * 10f);
 	}
 
 	public void ChangeAngle()

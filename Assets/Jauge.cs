@@ -5,14 +5,17 @@ using UnityEngine;
 public class Jauge : MonoBehaviour
 {
 	public GameObject m_JaugeFill;
+	public GameObject m_Explosion;
 	public float m_FuelConsumption = 0.01f;
 	
 	private RectTransform m_JaugeFillTransform;
+	private ParticleSystem m_ExplosionParticleSystem;
 	private float m_FuelAmount;
 
 	void Awake()
 	{
 		m_JaugeFillTransform= m_JaugeFill.GetComponent<RectTransform>();
+		m_ExplosionParticleSystem = m_Explosion.GetComponent<ParticleSystem>();
 	}
 
 	// Use this for initialization
@@ -36,6 +39,11 @@ public class Jauge : MonoBehaviour
 		
 		if (Input.GetKeyDown("up"))
 			AddFuel(0.2f);
+
+		if (Input.GetKeyDown("left"))
+		{
+			m_ExplosionParticleSystem.Emit(500);
+		}
 	}
 
 	private void UpdateJauge()

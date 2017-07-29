@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
 
+	public static GravityAttractor p1Attraction;
+	
 	// Use this for initialization
 	void Start () {
 		

@@ -15,8 +15,8 @@ public class Ship : MonoBehaviour
 	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
-		speed = 10.0f;
-		turnSpeed = 1.0f;
+		speed = 3.0f;
+		turnSpeed = 0.5f;
 	}
 
 	// Update is called once per frame
@@ -45,6 +45,6 @@ public class Ship : MonoBehaviour
 	{
 		angle = -Input.GetAxis("Horizontal");
 		rb.AddTorque(angle * turnSpeed);
-		//transform.Rotate(new Vector3(0,0,angle* Time.deltaTime) );
+		//transform.Rotate(new Vector3(0,0, angle * turnSpeed ) );
 	}
 }

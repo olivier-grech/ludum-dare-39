@@ -17,9 +17,13 @@ public class GravityBody : MonoBehaviour {
 
 	void FixedUpdate () 
 	{
-		if (attractor)
+		if (attractor != GameManager.p1Attraction)
 		{
-			attractor.Attract(myTransform);
+			attractor = GameManager.p1Attraction;
 		}
+		if (attractor)
+			{
+				attractor.Attract(myTransform);
+			}
 	}
 }

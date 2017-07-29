@@ -7,14 +7,16 @@ public class Ship : MonoBehaviour
 {
 	public float speed;
 	public float angle;
+	public float turnSpeed;
 	private Vector3 innertie;
-	public Rigidbody rb;
+	public Rigidbody2D rb;
 
 	// Use this for initialization
 	void Start()
 	{
-		rb = GetComponent<Rigidbody>();
-		speed = 1.0f;
+		rb = GetComponent<Rigidbody2D>();
+		speed = 10.0f;
+		turnSpeed = 1.0f;
 	}
 
 	// Update is called once per frame
@@ -35,14 +37,14 @@ public class Ship : MonoBehaviour
 
 	public void ChangeSpeed()
 	{
-		speed = Input.GetAxis("Vertical");
-		rb.AddForce(transform.up * speed * 10f);
+		float input = Input.GetAxis("Vertical");
+		rb.AddForce(transform.up * input * speed);
 	}
 
 	public void ChangeAngle()
 	{
 		angle = -Input.GetAxis("Horizontal");
-		rb.AddTorque(0,0, angle * 3f);
-		//transform.Rotate(new Vector3(0,0,angle) * 10f);
+		rb.AddTorque(angle * turnSpeed);
+		//transform.Rotate(new Vector3(0,0,angle* Time.deltaTime) );
 	}
 }

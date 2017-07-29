@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent (typeof (Rigidbody))]
+[RequireComponent (typeof (Rigidbody2D))]
 public class GravityBody : MonoBehaviour {
 
 	public GravityAttractor attractor;
@@ -9,8 +9,8 @@ public class GravityBody : MonoBehaviour {
 
 	void Start () 
 	{
-		GetComponent<Rigidbody>().useGravity = false;
-		GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+		//GetComponent<Rigidbody2D>().useGravity = false;
+		//GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 
 		myTransform = transform;
 	}

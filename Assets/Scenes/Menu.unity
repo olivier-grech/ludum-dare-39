@@ -784,7 +784,6 @@ GameObject:
   m_Component:
   - component: {fileID: 894962550}
   - component: {fileID: 894962551}
-  - component: {fileID: 894962552}
   m_Layer: 5
   m_Name: Level Buttons Grid
   m_TagString: Untagged
@@ -839,17 +838,6 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 2
   m_ConstraintCount: 2
---- !u!114 &894962552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 894962549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7f658ff0884c4648ada95dc8599b845, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1024958177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,7 +1346,7 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 894962552}
+      objectReference: {fileID: 0}
     - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName

@@ -5,41 +5,63 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-	public float speed;
-	public float angle;
-	public float turnSpeed;
-	private Vector3 innertie;
-	public Rigidbody2D rb;
+	public float m_MoveSpeed;
+	public float m_TurnSpeed;
+	public float m_Angle;
+	public float m_FuelConsumption;
+	public Rigidbody2D m_Rigidbody2D;
+	public GameObject m_FuelJaugeObject;
+	public GameObject m_Booster;
+	
+	private Vector3 m_Inertia;
+	private Jauge m_FuelJauge;
+	private ParticleSystem m_BoosterParticleSystem;
+	
+	void Awake()
+	{
+		m_FuelJauge = m_FuelJaugeObject.GetComponent<Jauge>();
+		m_BoosterParticleSystem = m_Booster.GetComponent<ParticleSystem>();
+	}
 
 	// Use this for initialization
 	void Start()
 	{
-		rb = GetComponent<Rigidbody2D>();
-		speed = 3.0f;
-		turnSpeed = 0.5f;
+		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		m_MoveSpeed = 3.0f;
+		m_TurnSpeed = 0.5f;
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		//Vector3 move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-		//transform.position += move * speed * Time.deltaTime;
-		
-		//transform.position += transform.position * speed * Time.deltaTime;
 		ChangeAngle();
 		ChangeSpeed();
 	}
 
 	public void ChangeSpeed()
 	{
-		float input = Input.GetAxis("Vertical");
-		rb.AddForce(transform.up * input * speed);
+		if (m_FuelJauge.GetFuelAmount()>0)
+		{
+			float input = Input.GetAxis("Vertical");
+			
+			// Add force to move
+			m_Rigidbody2D.AddForce(transform.up * input * m_MoveSpeed);
+			
+			// Emit particles
+			
+			
+			// Remove fuel
+			if (input > 0)
+			{
+				m_BoosterParticleSystem.Emit(1);
+				m_FuelJauge.RemoveFuel(input * m_FuelConsumption);
+			}
+		}
 	}
 
 	public void ChangeAngle()
 	{
-		angle = -Input.GetAxis("Horizontal");
-		rb.AddTorque(angle * turnSpeed);
-		//transform.Rotate(new Vector3(0, 0, angle * turnSpeed ));
+		m_Angle = -Input.GetAxis("Horizontal");
+		m_Rigidbody2D.AddTorque(m_Angle * m_TurnSpeed);
 	}
 }

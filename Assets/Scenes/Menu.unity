@@ -776,9 +776,9 @@ MonoBehaviour:
   m_CompletedLevels: 
   m_LevelsList:
   - {fileID: 1796258604908482, guid: 5ff45d2cf92c9734b896f27b1b9b5702, type: 2}
-  - {fileID: 1299682346547510, guid: 08577a85917c8a84fbd1879d9b4d1f86, type: 2}
-  - {fileID: 1656324791166976, guid: 2df5154179f19294382008510f1e846c, type: 2}
-  - {fileID: 1567653207312292, guid: 7b45a0b0075c9ad438d06f6d45d801f1, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
 --- !u!4 &862152658
@@ -978,22 +978,22 @@ Prefab:
     - target: {fileID: 224998680734235926, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 280
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224998680734235926, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -140
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224998680734235926, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224998680734235926, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224998680734235926, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
@@ -1003,7 +1003,7 @@ Prefab:
     - target: {fileID: 224998680734235926, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224998680734235926, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
@@ -1013,7 +1013,7 @@ Prefab:
     - target: {fileID: 224998680734235926, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224998680734235926, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
@@ -1025,24 +1025,14 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1577017087247080, guid: 6f0816b546c03ea49b1eff5fd8d24569, type: 2}
-      propertyPath: m_Name
-      value: Level Button (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 862152657}
-    - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeLevel
-      objectReference: {fileID: 0}
-    - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+    - target: {fileID: 1577017087247080, guid: 6f0816b546c03ea49b1eff5fd8d24569, type: 2}
+      propertyPath: m_Name
+      value: Level Button (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f0816b546c03ea49b1eff5fd8d24569, type: 2}

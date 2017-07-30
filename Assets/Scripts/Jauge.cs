@@ -6,6 +6,8 @@ using UnityEngine;
 public class Jauge : MonoBehaviour
 {
 	public GameObject m_JaugeFill;
+
+	public GameObject m_ReloadLevelIndicator;
 	// public GameObject m_Explosion;
 
 	public static Jauge instance;
@@ -31,25 +33,7 @@ public class Jauge : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		/*
-		if (Input.GetKey("down") && m_FuelAmount > 0)
-		{
-			if (m_FuelAmount - m_FuelConsumption <= 0)
-				m_FuelAmount = 0;
-			else
-				m_FuelAmount -= m_FuelConsumption;
-
-			UpdateJauge();
-		}
-		
-		if (Input.GetKeyDown("up"))
-			AddFuel(0.2f);
-
-		if (Input.GetKeyDown("left"))
-		{
-			m_ExplosionParticleSystem.Emit(500);
-		}
-		*/
+	
 	}
 
 	private void UpdateJauge()
@@ -79,6 +63,7 @@ public class Jauge : MonoBehaviour
 		if (m_FuelAmount - amount <= 0)
 		{
 			m_FuelAmount = 0;
+			StartCoroutine(ShowReloadLevelIndicator());
 		}
 		else
 		{
@@ -91,5 +76,17 @@ public class Jauge : MonoBehaviour
 	public float GetFuelAmount()
 	{
 		return m_FuelAmount;
+	}
+	
+	IEnumerator ShowReloadLevelIndicator()
+	{
+		float timer = 3.0f;
+		while (timer > 0)
+		{
+			timer -= Time.deltaTime;
+			yield return null;
+		}
+		
+		m_ReloadLevelIndicator.SetActive(true);
 	}
 }

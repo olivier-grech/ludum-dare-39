@@ -13,16 +13,17 @@ public class LevelManager : MonoBehaviour
 	void Awake()
 	{
 		instance = this;
+		m_GameManager = GameManager.instance;
+		
+		Debug.Log(m_GameManager);
+		Object.Instantiate(m_GameManager.m_LevelsList[m_GameManager.GetCurrentLevelIndex()]);
 	}
 	
 	// Use this for initialization
 	void Start ()
 	{
 		
-		m_GameManager = GameManager.instance;
 		
-		Debug.Log(m_GameManager);
-		Object.Instantiate(m_GameManager.m_LevelsList[m_GameManager.m_CurrentLevelIndex]);
 
 	}
 	

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 	
 	[HideInInspector] public bool[] m_CompletedLevels;
 	public GameObject[] m_LevelsList;
-	public int m_CurrentLevelIndex;
+	public static int m_CurrentLevelIndex;
 
 	void Awake()
 	{
@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
 		{
 			awoken = true;
 			
-			Debug.Log("GameManager awoken");
 			// Define a singleton
 			DontDestroyOnLoad(this);
 			instance = this;
@@ -45,7 +44,17 @@ public class GameManager : MonoBehaviour
 	
 	public void ChangeLevel(int levelIndex)
 	{
-		m_CurrentLevelIndex = levelIndex;
+		SetCurrentLevelIndex(levelIndex);
 		SceneManager.LoadScene("Level");
+	}
+
+	public int GetCurrentLevelIndex()
+	{
+		return m_CurrentLevelIndex;
+	}
+
+	public void SetCurrentLevelIndex(int index)
+	{
+		m_CurrentLevelIndex = index;
 	}
 }

@@ -24,12 +24,12 @@ public class LevelObjective : MonoBehaviour {
 
 		if (other.GetComponent<Ship>() != null)
 		{
-			m_GameManager.m_CompletedLevels[m_GameManager.m_CurrentLevelIndex] = true;
+			m_GameManager.m_CompletedLevels[m_GameManager.GetCurrentLevelIndex()] = true;
 			for (int i = 0; i < 6; i++)
 				Debug.Log(m_GameManager.m_CompletedLevels[i]);
 			
-			if (m_GameManager.m_LevelsList[m_GameManager.m_CurrentLevelIndex + 1] != null)
-				m_GameManager.ChangeLevel(m_GameManager.m_CurrentLevelIndex + 1);
+			if (m_GameManager.m_LevelsList[m_GameManager.GetCurrentLevelIndex() + 1] != null)
+				m_GameManager.ChangeLevel(m_GameManager.GetCurrentLevelIndex() + 1);
 			else
 				m_LevelManager.ReturnToMenu();
 			

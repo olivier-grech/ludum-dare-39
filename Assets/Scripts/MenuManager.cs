@@ -9,6 +9,9 @@ public class MenuManager : MonoBehaviour
 
 	private GameManager m_GameManager;
 
+	public GameObject m_MenuTab;
+	public GameObject m_AboutTab;
+
 	void Awake()
 	{
 		
@@ -44,5 +47,17 @@ public class MenuManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void SwitchTabToMenu()
+	{
+		m_AboutTab.SetActive(false);
+		m_MenuTab.SetActive(true);
+	}
+	
+	public void SwitchTabToAbout()
+	{
+		m_MenuTab.SetActive(false);
+		m_AboutTab.SetActive(true);
 	}
 }

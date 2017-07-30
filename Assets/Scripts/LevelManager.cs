@@ -34,11 +34,21 @@ public class LevelManager : MonoBehaviour
 		{
 			ReturnToMenu();
 		}	
+		else if (Input.GetButton("Fire1"))
+		{
+			ReloadLevel();
+		}
 	}
 
 	public void ReturnToMenu()
 	{
 		SceneManager.LoadScene("Menu");
+	}
+
+	public void ReloadLevel()
+	{
+		Debug.Log("Reolad");
+		SceneManager.LoadScene("Level");
 	}
 
 	public GravityAttractor GetCurrentAttractor()

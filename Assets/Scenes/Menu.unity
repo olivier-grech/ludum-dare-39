@@ -775,13 +775,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CompletedLevels: 
   m_LevelsList:
-  - {fileID: 1893238404142014, guid: 60e2e581495852040ad6c791ede31d50, type: 2}
-  - {fileID: 1426123159788922, guid: 74318ec0e7c24a44f8c8594101a03661, type: 2}
-  - {fileID: 1497915023918886, guid: 51198efbf2d6dc74b9d0628f6b12421a, type: 2}
-  - {fileID: 1534061948310958, guid: fae4798cca1346a43af8a9b5061a7480, type: 2}
+  - {fileID: 1796258604908482, guid: 5ff45d2cf92c9734b896f27b1b9b5702, type: 2}
+  - {fileID: 1299682346547510, guid: 08577a85917c8a84fbd1879d9b4d1f86, type: 2}
+  - {fileID: 1656324791166976, guid: 2df5154179f19294382008510f1e846c, type: 2}
+  - {fileID: 1567653207312292, guid: 7b45a0b0075c9ad438d06f6d45d801f1, type: 2}
   - {fileID: 0}
   - {fileID: 0}
-  m_CurrentLevelIndex: 0
 --- !u!4 &862152658
 Transform:
   m_ObjectHideFlags: 0

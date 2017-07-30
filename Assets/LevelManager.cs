@@ -9,11 +9,16 @@ public class LevelManager : MonoBehaviour
 	
 	private GameManager m_GameManager;
 	public static GravityAttractor m_Player1Attraction;
+
+	void Awake()
+	{
+		instance = this;
+	}
 	
 	// Use this for initialization
 	void Start ()
 	{
-		instance = this;
+		
 		m_GameManager = GameManager.instance;
 		
 		Debug.Log(m_GameManager);

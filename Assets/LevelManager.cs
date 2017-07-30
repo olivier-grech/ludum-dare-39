@@ -12,7 +12,9 @@ public class LevelManager : MonoBehaviour {
 	{
 		
 		m_GameManager = GameManager.instance;
-		
+
+		GameObject.Instantiate(m_GameManager.m_LevelsList[m_GameManager.m_CurrentLevelIndex]);
+
 	}
 	
 	// Update is called once per frame

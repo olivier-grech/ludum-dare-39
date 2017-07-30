@@ -44,15 +44,15 @@ public class Ship : MonoBehaviour
 		{
 			float input = Input.GetAxis("Vertical");
 			
-			// Add force to move
-			m_Rigidbody2D.AddForce(transform.up * input * m_MoveSpeed);
-			
-			// Emit particles
-			
-			
-			// Remove fuel
 			if (input > 0)
 			{
+				// Add force to move
+				m_Rigidbody2D.AddForce(transform.up * input * m_MoveSpeed);
+				
+				// Emit particles
+				
+				
+				// Remove fuel
 				m_BoosterParticleSystem.Emit(1);
 				m_FuelJauge.RemoveFuel(input * m_FuelConsumption);
 			}

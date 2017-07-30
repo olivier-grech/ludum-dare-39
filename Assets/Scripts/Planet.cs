@@ -26,13 +26,13 @@ public class Planet : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		m_LevelManager.m_Player1Attraction = thisGameObject.GetComponent<GravityAttractor>() ;
-		Debug.Log(m_LevelManager.m_Player1Attraction);
+		m_LevelManager.SetCurrentAttractor(thisGameObject.GetComponent<GravityAttractor>());
+		Debug.Log(m_LevelManager.GetCurrentAttractor());
 	}
 
 	private void OnTriggerExit2D(Collider2D other)
 	{
-		m_LevelManager.m_Player1Attraction = null;
+		m_LevelManager.SetCurrentAttractor(null);
 		Debug.Log("Untriggered");
 	}
 }

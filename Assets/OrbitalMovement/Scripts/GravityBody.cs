@@ -7,19 +7,20 @@ public class GravityBody : MonoBehaviour {
 	public GravityAttractor attractor;
 	private Transform myTransform;
 
+	private LevelManager m_LevelManager;
 	void Start () 
 	{
 		//GetComponent<Rigidbody2D>().useGravity = false;
 		//GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-
+		m_LevelManager = LevelManager.instance;
 		myTransform = transform;
 	}
 
 	void FixedUpdate () 
 	{
-		if (attractor != GameManager.p1Attraction)
+		if (attractor != m_LevelManager.m_Player1Attraction)
 		{
-			attractor = GameManager.p1Attraction;
+			attractor = m_LevelManager.m_Player1Attraction;
 		}
 		if (attractor)
 			{

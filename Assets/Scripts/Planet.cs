@@ -8,26 +8,31 @@ public class Planet : MonoBehaviour
 	public Collider2D col;
 
 	private GameObject thisGameObject;
+	private LevelManager m_LevelManager;
+	
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
+		m_LevelManager = LevelManager.instance;
 		col = GetComponent<Collider2D>();
 		thisGameObject = this.transform.parent.gameObject;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		GameManager.p1Attraction = thisGameObject.GetComponent<GravityAttractor>() ;
-		Debug.Log(GameManager.p1Attraction);
+		m_LevelManager.m_Player1Attraction = thisGameObject.GetComponent<GravityAttractor>() ;
+		Debug.Log(m_LevelManager.m_Player1Attraction);
 	}
 
 	private void OnTriggerExit2D(Collider2D other)
 	{
-		GameManager.p1Attraction = null;
+		m_LevelManager.m_Player1Attraction = null;
 		Debug.Log("Untriggered");
 	}
 }

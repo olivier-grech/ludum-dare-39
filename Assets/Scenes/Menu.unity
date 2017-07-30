@@ -756,7 +756,7 @@ MonoBehaviour:
   m_CompletedLevels: 
   m_LevelsList:
   - {fileID: 1426123159788922, guid: 74318ec0e7c24a44f8c8594101a03661, type: 2}
-  - {fileID: 0}
+  - {fileID: 1893238404142014, guid: 60e2e581495852040ad6c791ede31d50, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -1346,16 +1346,26 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 862152657}
     - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
+      value: ChangeLevel
       objectReference: {fileID: 0}
     - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Test
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f0816b546c03ea49b1eff5fd8d24569, type: 2}

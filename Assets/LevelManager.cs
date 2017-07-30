@@ -12,8 +12,9 @@ public class LevelManager : MonoBehaviour {
 	{
 		
 		m_GameManager = GameManager.instance;
-
-		GameObject.Instantiate(m_GameManager.m_LevelsList[m_GameManager.m_CurrentLevelIndex]);
+		
+		Debug.Log(m_GameManager);
+		Object.Instantiate(m_GameManager.m_LevelsList[m_GameManager.m_CurrentLevelIndex]);
 
 	}
 	

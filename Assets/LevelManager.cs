@@ -34,4 +34,14 @@ public class LevelManager : MonoBehaviour
 	{
 		SceneManager.LoadScene("Menu");
 	}
+
+	public GravityAttractor GetCurrentAttractor()
+	{
+		return m_Player1Attraction;
+	}
+
+	public void SetCurrentAttractor(GravityAttractor attractor)
+	{
+		m_Player1Attraction = attractor;
+	}
 }

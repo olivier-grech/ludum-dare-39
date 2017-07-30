@@ -18,9 +18,9 @@ public class GravityBody : MonoBehaviour {
 
 	void FixedUpdate () 
 	{
-		if (attractor != m_LevelManager.m_Player1Attraction)
+		if (attractor != m_LevelManager.GetCurrentAttractor())
 		{
-			attractor = m_LevelManager.m_Player1Attraction;
+			attractor = m_LevelManager.GetCurrentAttractor();
 		}
 		if (attractor)
 			{

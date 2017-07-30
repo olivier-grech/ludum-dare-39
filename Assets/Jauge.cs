@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class Jauge : MonoBehaviour
 {
 	public GameObject m_JaugeFill;
 	// public GameObject m_Explosion;
+
+	public static Jauge instance;
 	
 	private RectTransform m_JaugeFillTransform;
 	private ParticleSystem m_ExplosionParticleSystem;
@@ -13,6 +16,7 @@ public class Jauge : MonoBehaviour
 
 	void Awake()
 	{
+		instance = this;
 		m_JaugeFillTransform= m_JaugeFill.GetComponent<RectTransform>();
 		// m_ExplosionParticleSystem = m_Explosion.GetComponent<ParticleSystem>();
 	}

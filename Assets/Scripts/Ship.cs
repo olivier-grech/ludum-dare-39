@@ -19,13 +19,14 @@ public class Ship : MonoBehaviour
 	
 	void Awake()
 	{
-		m_FuelJauge = m_FuelJaugeObject.GetComponent<Jauge>();
+		//m_FuelJauge = m_FuelJaugeObject.GetComponent<Jauge>();
 		m_BoosterParticleSystem = m_Booster.GetComponent<ParticleSystem>();
 	}
 
 	// Use this for initialization
 	void Start()
 	{
+		m_FuelJauge = Jauge.instance;
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		m_MoveSpeed = 3.0f;
 		m_TurnSpeed = 0.5f;

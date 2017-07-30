@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour {
+public class LevelManager : MonoBehaviour 
+{
+	public static LevelManager instance;
 	
 	private GameManager m_GameManager;
-
+	public static GravityAttractor m_Player1Attraction;
+	
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
-		
+		instance = this;
 		m_GameManager = GameManager.instance;
 		
 		Debug.Log(m_GameManager);

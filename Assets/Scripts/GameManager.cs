@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
 	public static GameManager instance;
 	
-	public static GravityAttractor p1Attraction;
+	
 	[HideInInspector] public bool[] m_CompletedLevels;
 	public GameObject[] m_LevelsList;
 	public int m_CurrentLevelIndex;

@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 06d6354e339e6994f8163b8959b2d975
   - enabled: 1
-    path: Assets/Scenes/Jauge.unity
-    guid: 579164b2ad4ec8746a4b6304762d60c6
-  - enabled: 1
-    path: Assets/Scenes/Test.unity
+    path: Assets/Scenes/Level.unity
     guid: 0e16e9c3b048c4e49ab316f0094d7cb3
+  - enabled: 1
+    path: Assets/Scenes/Test_Jauge.unity
+    guid: 579164b2ad4ec8746a4b6304762d60c6

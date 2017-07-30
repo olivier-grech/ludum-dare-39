@@ -24,8 +24,16 @@ public class MenuManager : MonoBehaviour
 		int i = 0;
 		foreach (var button in levelButtons)
 		{
-			Debug.Log(m_GameManager.CompletedLevels[i]);
-			button.interactable = m_GameManager.CompletedLevels[i];
+			// Le premier niveau est toujours disponible
+			if (i == 0)
+			{
+				button.interactable = true;
+			}
+			else
+			{
+				button.interactable = m_GameManager.m_CompletedLevels[i-1];
+			}
+			
 			i++;
 		}
 

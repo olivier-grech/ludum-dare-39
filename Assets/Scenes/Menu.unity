@@ -753,7 +753,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0219f1e4c35dcac4eb628d4ff7817f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CompletedLevels: 
+  m_CompletedLevels: 
+  m_LevelsList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_CurrentLevelIndex: 0
 --- !u!4 &862152658
 Transform:
   m_ObjectHideFlags: 0
@@ -1010,19 +1018,24 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 894962552}
     - target: {fileID: 1577017087247080, guid: 6f0816b546c03ea49b1eff5fd8d24569, type: 2}
       propertyPath: m_Name
       value: Level Button (1)
       objectReference: {fileID: 0}
     - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level_1
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 862152657}
+    - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170396951576008, guid: 6f0816b546c03ea49b1eff5fd8d24569,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f0816b546c03ea49b1eff5fd8d24569, type: 2}

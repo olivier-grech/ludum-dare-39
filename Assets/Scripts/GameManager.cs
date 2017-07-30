@@ -1,17 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 	public static GameManager instance;
 	
-	// What 
 	public static GravityAttractor p1Attraction;
-	
-	// Boolean array of completed levels
-	[HideInInspector]
-	public bool[] CompletedLevels;
+	[HideInInspector] public bool[] m_CompletedLevels;
+	public GameObject[] m_LevelsList;
+	public int m_CurrentLevelIndex;
 
 	void Awake()
 	{
@@ -19,11 +18,11 @@ public class GameManager : MonoBehaviour
 		DontDestroyOnLoad(this);
 		instance = this;
 		
-		CompletedLevels = new bool[6];
-		CompletedLevels[0] = true;
-		for (int i = 1; i < CompletedLevels.Length; i++)
+		m_CompletedLevels = new bool[6];
+	
+		for (int i = 0; i < m_CompletedLevels.Length; i++)
 		{
-			CompletedLevels[i] = false;
+			m_CompletedLevels[i] = false;
 		}
 	}
 	
@@ -35,5 +34,11 @@ public class GameManager : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 		
+	}
+	
+	public void ChangeLevel(int levelIndex)
+	{
+		m_CurrentLevelIndex = levelIndex;
+		SceneManager.LoadScene("Level");
 	}
 }

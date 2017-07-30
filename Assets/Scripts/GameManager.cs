@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 	public static GameManager instance;
+	public static bool awoken = false;
 	
 	
 	[HideInInspector] public bool[] m_CompletedLevels;
@@ -14,15 +15,21 @@ public class GameManager : MonoBehaviour
 
 	void Awake()
 	{
-		// Define a singleton
-		DontDestroyOnLoad(this);
-		instance = this;
-		
-		m_CompletedLevels = new bool[6];
-	
-		for (int i = 0; i < m_CompletedLevels.Length; i++)
+		if (!awoken)
 		{
-			m_CompletedLevels[i] = false;
+			awoken = true;
+			
+			Debug.Log("GameManager awoken");
+			// Define a singleton
+			DontDestroyOnLoad(this);
+			instance = this;
+			
+			m_CompletedLevels = new bool[6];
+		
+			for (int i = 0; i < m_CompletedLevels.Length; i++)
+			{
+				m_CompletedLevels[i] = false;
+			}
 		}
 	}
 	

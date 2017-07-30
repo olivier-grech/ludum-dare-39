@@ -31,8 +31,10 @@ public class MenuManager : MonoBehaviour
 			}
 			else
 			{
+			
 				button.interactable = m_GameManager.m_CompletedLevels[i-1];
 			}
+			
 			
 			i++;
 		}

@@ -1047,11 +1047,12 @@ MonoBehaviour:
   m_CompletedLevels: 
   m_LevelsList:
   - {fileID: 1796258604908482, guid: 5ff45d2cf92c9734b896f27b1b9b5702, type: 2}
-  - {fileID: 1656324791166976, guid: 2df5154179f19294382008510f1e846c, type: 2}
-  - {fileID: 1299682346547510, guid: 08577a85917c8a84fbd1879d9b4d1f86, type: 2}
+  - {fileID: 1656324791166976, guid: 08577a85917c8a84fbd1879d9b4d1f86, type: 2}
+  - {fileID: 1299682346547510, guid: 2df5154179f19294382008510f1e846c, type: 2}
   - {fileID: 1567653207312292, guid: 7b45a0b0075c9ad438d06f6d45d801f1, type: 2}
   - {fileID: 0}
   - {fileID: 0}
+  m_AudioSourceBackgroundMusic: {fileID: 1428418676}
   m_AudioSourceLevelFinishedSound: {fileID: 1866367225}
 --- !u!4 &862152658
 Transform:
@@ -1385,7 +1386,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7b04c59dd84f14039b601e1abbe7b884, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
   Loop: 1

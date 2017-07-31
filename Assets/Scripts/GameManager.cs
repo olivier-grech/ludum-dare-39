@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 			
 			m_AudioSourceBackgroundMusic.Play();
 			
-			m_CompletedLevels = new bool[6];
+			m_CompletedLevels = new bool[15];
 		
 			for (int i = 0; i < m_CompletedLevels.Length; i++)
 			{

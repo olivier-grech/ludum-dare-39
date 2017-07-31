@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 50820728389389492}
   - component: {fileID: 60662441597398748}
   m_Layer: 8
-  m_Name: Ship
+  m_Name: Game_NewShip
   m_TagString: PlayerOne
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

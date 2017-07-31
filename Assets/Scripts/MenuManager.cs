@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,8 @@ public class MenuManager : MonoBehaviour
 
 	public GameObject m_MenuTab;
 	public GameObject m_AboutTab;
+
+	public GameObject m_CongratulationsMessage;
 
 	void Awake()
 	{
@@ -41,6 +44,12 @@ public class MenuManager : MonoBehaviour
 			
 			i++;
 		}
+
+		if (PlayerPrefs.GetInt("levelCompleted", -1) >= 12)
+		{
+			m_CongratulationsMessage.SetActive(true);
+		}
+			
 
 	}
 	

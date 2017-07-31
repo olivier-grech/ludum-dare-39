@@ -68,6 +68,10 @@ public class Ship : MonoBehaviour
 				m_BoosterAudioSource.Stop();
 			}
 		}
+		else if (m_BoosterAudioSource.clip != null)
+		{
+			m_BoosterAudioSource.Stop();
+		}
 	}
 
 	public void ChangeAngle()

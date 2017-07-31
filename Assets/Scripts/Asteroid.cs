@@ -7,6 +7,7 @@ public class Asteroid : MonoBehaviour
 	public Rigidbody2D ThisRigidbody2D;
 	public float xForce;
 	public float yForce;
+	public float rotation;
 	
 	// Use this for initialization
 	private void Awake()
@@ -16,6 +17,8 @@ public class Asteroid : MonoBehaviour
 
 	void Start () {
 		ThisRigidbody2D.AddForce(new Vector2(xForce,yForce));
+		ThisRigidbody2D.AddTorque(rotation);
+
 	}
 	
 	// Update is called once per frame

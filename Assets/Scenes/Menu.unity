@@ -1082,6 +1082,15 @@ MonoBehaviour:
   - {fileID: 1567653207312292, guid: 7b45a0b0075c9ad438d06f6d45d801f1, type: 2}
   - {fileID: 1796258604908482, guid: 2d23ed6041835f0458e89333832c9a90, type: 2}
   - {fileID: 1503154320808308, guid: 1094f31232fb9384e9d8683d48caaf32, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_AudioSourceBackgroundMusic: {fileID: 1428418676}
   m_AudioSourceLevelFinishedSound: {fileID: 1866367225}
 --- !u!4 &862152658

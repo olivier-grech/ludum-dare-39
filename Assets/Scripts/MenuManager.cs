@@ -45,7 +45,7 @@ public class MenuManager : MonoBehaviour
 			i++;
 		}
 
-		if (PlayerPrefs.GetInt("levelCompleted", -1) >= 12)
+		if (PlayerPrefs.GetInt("levelCompleted", -1) >= 6)
 		{
 			m_CongratulationsMessage.SetActive(true);
 		}

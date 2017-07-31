@@ -12,5 +12,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Level.unity
     guid: 0e16e9c3b048c4e49ab316f0094d7cb3
   - enabled: 0
-    path: Assets/Scenes/Test_Jauge.unity
+    path: 
     guid: 579164b2ad4ec8746a4b6304762d60c6

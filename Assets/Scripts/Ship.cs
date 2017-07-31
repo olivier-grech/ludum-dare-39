@@ -16,11 +16,13 @@ public class Ship : MonoBehaviour
 	private Vector3 m_Inertia;
 	private Jauge m_FuelJauge;
 	private ParticleSystem m_BoosterParticleSystem;
+	private AudioSource m_BoosterAudioSource;
 	
 	void Awake()
 	{
 		//m_FuelJauge = m_FuelJaugeObject.GetComponent<Jauge>();
 		m_BoosterParticleSystem = m_Booster.GetComponent<ParticleSystem>();
+		m_BoosterAudioSource = m_Booster.GetComponent<AudioSource>();
 	}
 
 	// Use this for initialization
@@ -44,18 +46,25 @@ public class Ship : MonoBehaviour
 		if (m_FuelJauge.GetFuelAmount()>0)
 		{
 			float input = Input.GetAxis("Vertical");
-			
+
 			if (input > 0)
 			{
 				// Add force to move
 				m_Rigidbody2D.AddForce(transform.up * input * m_MoveSpeed);
-				
+
+				// Play booster sound
+				if (!m_BoosterAudioSource.isPlaying)
+					m_BoosterAudioSource.Play();
+
 				// Emit particles
-				
-				
-				// Remove fuel
 				m_BoosterParticleSystem.Emit(1);
+
+				// Remove fuel
 				m_FuelJauge.RemoveFuel(input * m_FuelConsumption);
+			}
+			else
+			{
+				m_BoosterAudioSource.Stop();
 			}
 		}
 	}

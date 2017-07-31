@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 	[HideInInspector] public bool[] m_CompletedLevels;
 	public GameObject[] m_LevelsList;
 	public static int m_CurrentLevelIndex;
+	public AudioSource m_AudioSourceLevelFinishedSound;
 
 	void Awake()
 	{
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
 		
 			for (int i = 0; i < m_CompletedLevels.Length; i++)
 			{
-				m_CompletedLevels[i] = false;
+				m_CompletedLevels[i] = true;
 			}
 		}
 	}
@@ -56,5 +57,10 @@ public class GameManager : MonoBehaviour
 	public void SetCurrentLevelIndex(int index)
 	{
 		m_CurrentLevelIndex = index;
+	}
+
+	public void PlayLevelFinishedSound()
+	{
+		m_AudioSourceLevelFinishedSound.Play();
 	}
 }

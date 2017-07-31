@@ -33,6 +33,7 @@ public class Ship : MonoBehaviour
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 		m_MoveSpeed = 3.0f;
 		m_TurnSpeed = 0.5f;
+		m_FuelConsumption = 0.002f;
 	}
 
 	// Update is called once per frame

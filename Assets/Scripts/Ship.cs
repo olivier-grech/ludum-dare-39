@@ -53,7 +53,7 @@ public class Ship : MonoBehaviour
 				m_Rigidbody2D.AddForce(transform.up * input * m_MoveSpeed);
 
 				// Play booster sound
-				if (!m_BoosterAudioSource.isPlaying)
+				if (!m_BoosterAudioSource.isPlaying && m_BoosterAudioSource.clip != null)
 					m_BoosterAudioSource.Play();
 
 				// Emit particles
@@ -62,7 +62,7 @@ public class Ship : MonoBehaviour
 				// Remove fuel
 				m_FuelJauge.RemoveFuel(input * m_FuelConsumption);
 			}
-			else
+			else if (m_BoosterAudioSource.clip != null)
 			{
 				m_BoosterAudioSource.Stop();
 			}

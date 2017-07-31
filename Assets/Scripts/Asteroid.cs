@@ -16,7 +16,6 @@ public class Asteroid : MonoBehaviour
 
 	void Start () {
 		ThisRigidbody2D.AddForce(new Vector2(xForce,yForce));
-		Debug.Log("I'm here");
 	}
 	
 	// Update is called once per frame

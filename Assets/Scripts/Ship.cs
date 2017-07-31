@@ -12,6 +12,7 @@ public class Ship : MonoBehaviour
 	public Rigidbody2D m_Rigidbody2D;
 	public GameObject m_FuelJaugeObject;
 	public GameObject m_Booster;
+	//public GravityBody m_GravityBody;
 	
 	private Vector3 m_Inertia;
 	private Jauge m_FuelJauge;

@@ -32,13 +32,14 @@ public class Planet : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (m_LevelManager == null) return;
-		m_LevelManager.SetCurrentAttractor(thisGameObject.GetComponent<GravityAttractor>());
-		//Debug.Log(m_LevelManager.GetCurrentAttractor());
+		//m_LevelManager.SetCurrentAttractor(thisGameObject.GetComponent<GravityAttractor>());
+		other.gameObject.GetComponent<GravityBody>().attractor = thisGameObject.GetComponent<GravityAttractor>();
+		Debug.Log(other.gameObject.GetComponent<GravityBody>().attractor.gameObject.ToString());
 	}
 
 	private void OnTriggerExit2D(Collider2D other)
 	{
-		m_LevelManager.SetCurrentAttractor(null);
+		other.gameObject.GetComponent<GravityBody>().attractor = null;
 		Debug.Log("Untriggered");
 	}
 }

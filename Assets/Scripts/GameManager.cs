@@ -27,12 +27,22 @@ public class GameManager : MonoBehaviour
 			
 			m_AudioSourceBackgroundMusic.Play();
 			
+			if (PlayerPrefs.GetInt("levelCompleted", -1) == -1)
+			{
+				PlayerPrefs.SetInt("levelCompleted", 0);
+			}
+			
+			Debug.Log(PlayerPrefs.GetInt("levelCompleted", -1));
+			
 			m_CompletedLevels = new bool[15];
 		
 			for (int i = 0; i < m_CompletedLevels.Length; i++)
 			{
-				m_CompletedLevels[i] = true;
-			}
+				if (PlayerPrefs.GetInt("levelCompleted", -1) > i)
+					m_CompletedLevels[i] = true;
+				else
+					m_CompletedLevels[i] = false;
+			}	
 			
 			
 		}

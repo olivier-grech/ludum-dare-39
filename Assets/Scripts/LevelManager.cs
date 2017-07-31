@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour 
 {
@@ -9,6 +10,8 @@ public class LevelManager : MonoBehaviour
 	
 	private GameManager m_GameManager;
 	public static GravityAttractor m_Player1Attraction;
+	public GameObject m_TutorialIndicator;
+	
 
 	void Awake()
 	{
@@ -22,7 +25,10 @@ public class LevelManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		
+		if (m_GameManager.GetCurrentLevelIndex() == 0)
+		{
+			StartCoroutine(ShowTutorialIndicator());
+		}
 		
 
 	}
@@ -59,5 +65,20 @@ public class LevelManager : MonoBehaviour
 	public void SetCurrentAttractor(GravityAttractor attractor)
 	{
 		m_Player1Attraction = attractor;
+	}
+
+	IEnumerator ShowTutorialIndicator()
+	{
+		float timer = 7.0f;
+		
+		m_TutorialIndicator.SetActive(true);
+
+		while (timer > 0)
+		{
+			timer -= Time.deltaTime;
+			yield return null;
+		}
+		
+		m_TutorialIndicator.SetActive(false);
 	}
 }

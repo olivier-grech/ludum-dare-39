@@ -27,7 +27,17 @@ public class LevelObjective : MonoBehaviour {
 		if (other.GetComponent<Ship>() != null)
 		{
 			m_GameManager.PlayLevelFinishedSound();
+			
 			m_GameManager.m_CompletedLevels[m_GameManager.GetCurrentLevelIndex()] = true;
+
+			if (PlayerPrefs.GetInt("levelCompleted", -1) <= m_GameManager.GetCurrentLevelIndex())
+			{
+				Debug.Log("PlayerPrefs updated");
+				
+				PlayerPrefs.SetInt("levelCompleted", m_GameManager.GetCurrentLevelIndex()+1);
+				Debug.Log("levelCompleted: "+PlayerPrefs.GetInt("levelCompleted", -1));
+			}
+			
 			for (int i = 0; i < 6; i++)
 				Debug.Log(m_GameManager.m_CompletedLevels[i]);
 			
